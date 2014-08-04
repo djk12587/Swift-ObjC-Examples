@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D52CE69119901A4D00A82A7A /* MainTableViewControllerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52CE69019901A4D00A82A7A /* MainTableViewControllerSwift.swift */; };
+		D52CE69819901B0000A82A7A /* MainTableViewControllerObj-C.m in Sources */ = {isa = PBXBuildFile; fileRef = D52CE69719901B0000A82A7A /* MainTableViewControllerObj-C.m */; };
+		D52CE69E1990257B00A82A7A /* UIKitExamplesObj-C.m in Sources */ = {isa = PBXBuildFile; fileRef = D52CE69D1990257B00A82A7A /* UIKitExamplesObj-C.m */; };
+		D52CE6A01990258E00A82A7A /* UIKitExamplesSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52CE69F1990258E00A82A7A /* UIKitExamplesSwift.swift */; };
 		D56090EE19900F320092AA36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56090ED19900F320092AA36 /* AppDelegate.swift */; };
 		D56090F019900F320092AA36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56090EF19900F320092AA36 /* ViewController.swift */; };
 		D56090F319900F320092AA36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D56090F119900F320092AA36 /* Main.storyboard */; };
@@ -25,6 +29,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D52CE69019901A4D00A82A7A /* MainTableViewControllerSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewControllerSwift.swift; sourceTree = "<group>"; };
+		D52CE69519901AFF00A82A7A /* Swift&ObjC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swift&ObjC-Bridging-Header.h"; sourceTree = "<group>"; };
+		D52CE69619901B0000A82A7A /* MainTableViewControllerObj-C.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MainTableViewControllerObj-C.h"; sourceTree = "<group>"; };
+		D52CE69719901B0000A82A7A /* MainTableViewControllerObj-C.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MainTableViewControllerObj-C.m"; sourceTree = "<group>"; };
+		D52CE69C1990257B00A82A7A /* UIKitExamplesObj-C.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKitExamplesObj-C.h"; sourceTree = "<group>"; };
+		D52CE69D1990257B00A82A7A /* UIKitExamplesObj-C.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIKitExamplesObj-C.m"; sourceTree = "<group>"; };
+		D52CE69F1990258E00A82A7A /* UIKitExamplesSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitExamplesSwift.swift; sourceTree = "<group>"; };
 		D56090E819900F320092AA36 /* Swift&ObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift&ObjC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D56090EC19900F320092AA36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D56090ED19900F320092AA36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +65,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D52CE69219901AC700A82A7A /* MainTableView */ = {
+			isa = PBXGroup;
+			children = (
+				D52CE69419901AD600A82A7A /* Obj-C */,
+				D52CE69319901AD000A82A7A /* Swift */,
+			);
+			name = MainTableView;
+			sourceTree = "<group>";
+		};
+		D52CE69319901AD000A82A7A /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				D52CE69019901A4D00A82A7A /* MainTableViewControllerSwift.swift */,
+			);
+			name = Swift;
+			sourceTree = "<group>";
+		};
+		D52CE69419901AD600A82A7A /* Obj-C */ = {
+			isa = PBXGroup;
+			children = (
+				D52CE69619901B0000A82A7A /* MainTableViewControllerObj-C.h */,
+				D52CE69719901B0000A82A7A /* MainTableViewControllerObj-C.m */,
+			);
+			name = "Obj-C";
+			sourceTree = "<group>";
+		};
+		D52CE6991990254A00A82A7A /* UIKit examples */ = {
+			isa = PBXGroup;
+			children = (
+				D52CE69B1990255C00A82A7A /* Obj-C */,
+				D52CE69A1990255700A82A7A /* Swift */,
+			);
+			name = "UIKit examples";
+			sourceTree = "<group>";
+		};
+		D52CE69A1990255700A82A7A /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				D52CE69F1990258E00A82A7A /* UIKitExamplesSwift.swift */,
+			);
+			name = Swift;
+			sourceTree = "<group>";
+		};
+		D52CE69B1990255C00A82A7A /* Obj-C */ = {
+			isa = PBXGroup;
+			children = (
+				D52CE69C1990257B00A82A7A /* UIKitExamplesObj-C.h */,
+				D52CE69D1990257B00A82A7A /* UIKitExamplesObj-C.m */,
+			);
+			name = "Obj-C";
+			sourceTree = "<group>";
+		};
 		D56090DF19900F320092AA36 = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +138,8 @@
 		D56090EA19900F320092AA36 /* Swift&ObjC */ = {
 			isa = PBXGroup;
 			children = (
+				D52CE6991990254A00A82A7A /* UIKit examples */,
+				D52CE69219901AC700A82A7A /* MainTableView */,
 				D56090ED19900F320092AA36 /* AppDelegate.swift */,
 				D56090EF19900F320092AA36 /* ViewController.swift */,
 				D56090F119900F320092AA36 /* Main.storyboard */,
@@ -87,6 +152,7 @@
 		D56090EB19900F320092AA36 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D52CE69519901AFF00A82A7A /* Swift&ObjC-Bridging-Header.h */,
 				D56090EC19900F320092AA36 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -208,6 +274,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D52CE69E1990257B00A82A7A /* UIKitExamplesObj-C.m in Sources */,
+				D52CE6A01990258E00A82A7A /* UIKitExamplesSwift.swift in Sources */,
+				D52CE69819901B0000A82A7A /* MainTableViewControllerObj-C.m in Sources */,
+				D52CE69119901A4D00A82A7A /* MainTableViewControllerSwift.swift in Sources */,
 				D56090F019900F320092AA36 /* ViewController.swift in Sources */,
 				D56090EE19900F320092AA36 /* AppDelegate.swift in Sources */,
 			);
@@ -325,9 +395,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Swift&ObjC/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swift&ObjC/Swift&ObjC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -336,9 +409,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Swift&ObjC/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swift&ObjC/Swift&ObjC-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -395,6 +470,7 @@
 				D560910619900F320092AA36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D560910719900F320092AA36 /* Build configuration list for PBXNativeTarget "Swift&ObjCTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +479,7 @@
 				D560910919900F320092AA36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
