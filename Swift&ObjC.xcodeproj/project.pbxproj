@@ -93,10 +93,10 @@
 		D52542AD19916C240052FDEB /* UIPageViewController */ = {
 			isa = PBXGroup;
 			children = (
-				D52542AF19916C520052FDEB /* Obj-C */,
-				D52542AE19916C410052FDEB /* Swift */,
 				D5DAA8A6199171B800BB616D /* ChildPageViewController.swift */,
 				D5DAA8A7199171B800BB616D /* ChildPageViewController.xib */,
+				D52542AF19916C520052FDEB /* Obj-C */,
+				D52542AE19916C410052FDEB /* Swift */,
 			);
 			name = UIPageViewController;
 			sourceTree = "<group>";
@@ -224,10 +224,10 @@
 		D56090EA19900F320092AA36 /* Swift&ObjC */ = {
 			isa = PBXGroup;
 			children = (
-				D52542AD19916C240052FDEB /* UIPageViewController */,
 				D52CE69219901AC700A82A7A /* MainTableView */,
 				D52CE6991990254A00A82A7A /* UIKit examples */,
 				D52CE6A3199089EB00A82A7A /* CollectionView */,
+				D52542AD19916C240052FDEB /* UIPageViewController */,
 				D56090ED19900F320092AA36 /* AppDelegate.swift */,
 				D56090EF19900F320092AA36 /* ViewController.swift */,
 				D56090F119900F320092AA36 /* Main.storyboard */,

@@ -10,7 +10,7 @@ import UIKit
 
 class ChildPageViewController: UIViewController {
     
-    var index:NSNumber?
+    var index:NSNumber!
     @IBOutlet weak var screenNumber: UILabel!
 
     override func viewDidLoad() {

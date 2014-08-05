@@ -37,31 +37,31 @@ class PageViewControllerSwift: UIViewController, UIPageViewControllerDataSource 
     
     func viewControllerAtIndex(index:NSInteger) -> ChildPageViewController {
         var childViewController = ChildPageViewController(nibName: "ChildPageViewController", bundle: nil)
-        childViewController.index = index
+        childViewController.index = NSNumber(integer: index)
         return childViewController
     }
     
     //MARK: UIPageControllerDataSource Methods
     func pageViewController(pageViewController: UIPageViewController!, viewControllerBeforeViewController viewController: UIViewController!) -> UIViewController! {
         var childViewController = viewController as ChildPageViewController
-        var index:NSNumber! = childViewController.index
+        var index:NSInteger! = childViewController.index.integerValue
         
-        if index == NSNumber(int: 0) {
+        if index == 0 || index == nil {
             return nil
         }
         
-        index = index - 1
+        index!--
         
         return viewControllerAtIndex(index)
     }
     
     func pageViewController(pageViewController: UIPageViewController!, viewControllerAfterViewController viewController: UIViewController!) -> UIViewController! {
         var childViewController = viewController as ChildPageViewController
-        var index:NSInteger! = childViewController.index
+        var index:NSInteger! = childViewController.index.integerValue
         
-        index = index + 1
+        index!++
         
-        if index == 5 {
+        if index == 5  || index == nil {
             return nil
         }
         
