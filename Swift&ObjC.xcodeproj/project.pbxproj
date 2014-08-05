@@ -11,6 +11,12 @@
 		D52CE69819901B0000A82A7A /* MainTableViewControllerObj-C.m in Sources */ = {isa = PBXBuildFile; fileRef = D52CE69719901B0000A82A7A /* MainTableViewControllerObj-C.m */; };
 		D52CE69E1990257B00A82A7A /* UIKitExamplesObj-C.m in Sources */ = {isa = PBXBuildFile; fileRef = D52CE69D1990257B00A82A7A /* UIKitExamplesObj-C.m */; };
 		D52CE6A01990258E00A82A7A /* UIKitExamplesSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52CE69F1990258E00A82A7A /* UIKitExamplesSwift.swift */; };
+		D52CE6AA19908A2900A82A7A /* CCFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D52CE6A719908A2900A82A7A /* CCFlowLayout.m */; };
+		D52CE6AB19908A2900A82A7A /* CCDetailCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D52CE6A919908A2900A82A7A /* CCDetailCollectionViewController.m */; };
+		D52CE6AE19908A6500A82A7A /* CollectionViewObj-C.m in Sources */ = {isa = PBXBuildFile; fileRef = D52CE6AD19908A6500A82A7A /* CollectionViewObj-C.m */; };
+		D52CE6B219908A9100A82A7A /* MainCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D52CE6B019908A9100A82A7A /* MainCollectionViewCell.m */; };
+		D52CE6B319908A9100A82A7A /* MainCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D52CE6B119908A9100A82A7A /* MainCollectionViewCell.xib */; };
+		D52CE6B519908EEF00A82A7A /* CollectionViewSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52CE6B419908EEF00A82A7A /* CollectionViewSwift.swift */; };
 		D56090EE19900F320092AA36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56090ED19900F320092AA36 /* AppDelegate.swift */; };
 		D56090F019900F320092AA36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56090EF19900F320092AA36 /* ViewController.swift */; };
 		D56090F319900F320092AA36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D56090F119900F320092AA36 /* Main.storyboard */; };
@@ -36,6 +42,16 @@
 		D52CE69C1990257B00A82A7A /* UIKitExamplesObj-C.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKitExamplesObj-C.h"; sourceTree = "<group>"; };
 		D52CE69D1990257B00A82A7A /* UIKitExamplesObj-C.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIKitExamplesObj-C.m"; sourceTree = "<group>"; };
 		D52CE69F1990258E00A82A7A /* UIKitExamplesSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitExamplesSwift.swift; sourceTree = "<group>"; };
+		D52CE6A619908A2900A82A7A /* CCFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCFlowLayout.h; path = ../CCFlowLayout.h; sourceTree = "<group>"; };
+		D52CE6A719908A2900A82A7A /* CCFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCFlowLayout.m; path = ../CCFlowLayout.m; sourceTree = "<group>"; };
+		D52CE6A819908A2900A82A7A /* CCDetailCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCDetailCollectionViewController.h; path = ../CCDetailCollectionViewController.h; sourceTree = "<group>"; };
+		D52CE6A919908A2900A82A7A /* CCDetailCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCDetailCollectionViewController.m; path = ../CCDetailCollectionViewController.m; sourceTree = "<group>"; };
+		D52CE6AC19908A6500A82A7A /* CollectionViewObj-C.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CollectionViewObj-C.h"; sourceTree = "<group>"; };
+		D52CE6AD19908A6500A82A7A /* CollectionViewObj-C.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CollectionViewObj-C.m"; sourceTree = "<group>"; };
+		D52CE6AF19908A9100A82A7A /* MainCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainCollectionViewCell.h; sourceTree = "<group>"; };
+		D52CE6B019908A9100A82A7A /* MainCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainCollectionViewCell.m; sourceTree = "<group>"; };
+		D52CE6B119908A9100A82A7A /* MainCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainCollectionViewCell.xib; sourceTree = "<group>"; };
+		D52CE6B419908EEF00A82A7A /* CollectionViewSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewSwift.swift; sourceTree = "<group>"; };
 		D56090E819900F320092AA36 /* Swift&ObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift&ObjC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D56090EC19900F320092AA36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D56090ED19900F320092AA36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +133,39 @@
 			name = "Obj-C";
 			sourceTree = "<group>";
 		};
+		D52CE6A3199089EB00A82A7A /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				D52CE6AF19908A9100A82A7A /* MainCollectionViewCell.h */,
+				D52CE6B019908A9100A82A7A /* MainCollectionViewCell.m */,
+				D52CE6B119908A9100A82A7A /* MainCollectionViewCell.xib */,
+				D52CE6A619908A2900A82A7A /* CCFlowLayout.h */,
+				D52CE6A719908A2900A82A7A /* CCFlowLayout.m */,
+				D52CE6A819908A2900A82A7A /* CCDetailCollectionViewController.h */,
+				D52CE6A919908A2900A82A7A /* CCDetailCollectionViewController.m */,
+				D52CE6A4199089F600A82A7A /* Obj-C */,
+				D52CE6A519908A0400A82A7A /* Swift */,
+			);
+			name = CollectionView;
+			sourceTree = "<group>";
+		};
+		D52CE6A4199089F600A82A7A /* Obj-C */ = {
+			isa = PBXGroup;
+			children = (
+				D52CE6AC19908A6500A82A7A /* CollectionViewObj-C.h */,
+				D52CE6AD19908A6500A82A7A /* CollectionViewObj-C.m */,
+			);
+			name = "Obj-C";
+			sourceTree = "<group>";
+		};
+		D52CE6A519908A0400A82A7A /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				D52CE6B419908EEF00A82A7A /* CollectionViewSwift.swift */,
+			);
+			name = Swift;
+			sourceTree = "<group>";
+		};
 		D56090DF19900F320092AA36 = {
 			isa = PBXGroup;
 			children = (
@@ -138,8 +187,9 @@
 		D56090EA19900F320092AA36 /* Swift&ObjC */ = {
 			isa = PBXGroup;
 			children = (
-				D52CE6991990254A00A82A7A /* UIKit examples */,
 				D52CE69219901AC700A82A7A /* MainTableView */,
+				D52CE6991990254A00A82A7A /* UIKit examples */,
+				D52CE6A3199089EB00A82A7A /* CollectionView */,
 				D56090ED19900F320092AA36 /* AppDelegate.swift */,
 				D56090EF19900F320092AA36 /* ViewController.swift */,
 				D56090F119900F320092AA36 /* Main.storyboard */,
@@ -256,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D56090F319900F320092AA36 /* Main.storyboard in Resources */,
+				D52CE6B319908A9100A82A7A /* MainCollectionViewCell.xib in Resources */,
 				D56090F519900F320092AA36 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,9 +328,14 @@
 				D52CE69E1990257B00A82A7A /* UIKitExamplesObj-C.m in Sources */,
 				D52CE6A01990258E00A82A7A /* UIKitExamplesSwift.swift in Sources */,
 				D52CE69819901B0000A82A7A /* MainTableViewControllerObj-C.m in Sources */,
+				D52CE6B519908EEF00A82A7A /* CollectionViewSwift.swift in Sources */,
 				D52CE69119901A4D00A82A7A /* MainTableViewControllerSwift.swift in Sources */,
 				D56090F019900F320092AA36 /* ViewController.swift in Sources */,
+				D52CE6AB19908A2900A82A7A /* CCDetailCollectionViewController.m in Sources */,
 				D56090EE19900F320092AA36 /* AppDelegate.swift in Sources */,
+				D52CE6B219908A9100A82A7A /* MainCollectionViewCell.m in Sources */,
+				D52CE6AA19908A2900A82A7A /* CCFlowLayout.m in Sources */,
+				D52CE6AE19908A6500A82A7A /* CollectionViewObj-C.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

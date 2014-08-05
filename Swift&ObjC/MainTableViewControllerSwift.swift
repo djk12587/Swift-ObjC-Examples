@@ -50,9 +50,10 @@ class MainTableViewControllerSwift: UITableViewController {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
         switch indexPath.row {
-        default:
+        case 0:
             self.performSegueWithIdentifier("UIKitExamplesSwift", sender: nil)
-            
+        default:
+            self.performSegueWithIdentifier("UICollectionViewSwift", sender: nil)
         }
     }
 
