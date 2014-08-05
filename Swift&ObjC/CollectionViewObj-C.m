@@ -34,32 +34,36 @@
     switch (indexPath.row) {
         case 0: {
             [cell.imageView setImage:[UIImage imageNamed:@"mayhem1.png"]];
+            [cell.textLabel setText:@"mayhem maid"];
         }
             break;
         case 1: {
             [cell.imageView setImage:[UIImage imageNamed:@"mayhem2.png"]];
+            [cell.textLabel setText:@"mayhem branch"];
         }
             break;
         case 2: {
             [cell.imageView setImage:[UIImage imageNamed:@"mayhem3.png"]];
+            [cell.textLabel setText:@"mayhem becky"];
         }
             break;
         case 3: {
             [cell.imageView setImage:[UIImage imageNamed:@"mayhem4.png"]];
+            [cell.textLabel setText:@"mayhem blind spot"];
         }
             break;
         case 4: {
             [cell.imageView setImage:[UIImage imageNamed:@"mayhem5.png"]];
+            [cell.textLabel setText:@"mayhem jogger"];
         }
             break;
             
         default: {
             [cell.imageView setImage:[UIImage imageNamed:@"mayhem6.png"]];
+            [cell.textLabel setText:@"mayhem"];
         }
             break;
     }
-    
-    [cell.textLabel setText:@"cell text label"];
     
     return cell;
 }

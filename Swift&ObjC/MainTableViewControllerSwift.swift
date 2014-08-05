@@ -52,8 +52,10 @@ class MainTableViewControllerSwift: UITableViewController {
         switch indexPath.row {
         case 0:
             self.performSegueWithIdentifier("UIKitExamplesSwift", sender: nil)
-        default:
+        case 1:
             self.performSegueWithIdentifier("UICollectionViewSwift", sender: nil)
+        default:
+            self.performSegueWithIdentifier("PageViewControllerSwift", sender: nil)
         }
     }
 

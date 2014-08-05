@@ -64,6 +64,9 @@
             [self performSegueWithIdentifier:@"CollectionViewObjc" sender:nil];
         }
             break;
+        case 2: {
+            [self performSegueWithIdentifier:@"PageViewControllerObjc" sender:nil];
+        }
     }
     
     
