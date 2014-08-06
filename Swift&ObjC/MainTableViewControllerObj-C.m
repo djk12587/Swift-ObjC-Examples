@@ -7,6 +7,9 @@
 //
 
 #import "MainTableViewControllerObj-C.h"
+#import "UIKitExamplesObj-C.h"
+#import "CollectionViewObj-C.h"
+#import "PageViewControllerObj-C.h"
 
 @implementation MainTableViewControllerObj_C
 
@@ -25,7 +28,13 @@
 }
 
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    static NSString *CellIdentifier = @"objcCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"objcCell"];
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+    }
     
     switch (indexPath.row) {
         case 0:
@@ -57,15 +66,19 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     switch (indexPath.row) {
         case 0: {
-            [self performSegueWithIdentifier:@"UIKitExamplesObjc" sender:nil];
+            UIKitExamplesObj_C *viewController = [[UIKitExamplesObj_C alloc]initWithNibName:@"UIKitTableViewControllerParent" bundle:nil];
+            [self.navigationController pushViewController:viewController animated:YES];
         }
             break;
         case 1: {
-            [self performSegueWithIdentifier:@"CollectionViewObjc" sender:nil];
+            CollectionViewObj_C *viewController = [[CollectionViewObj_C alloc]initWithNibName:@"CCDetailCollectionViewController" bundle:nil];
+            [self.navigationController pushViewController:viewController animated:YES];
         }
             break;
         case 2: {
-            [self performSegueWithIdentifier:@"PageViewControllerObjc" sender:nil];
+            PageViewControllerObj_C *viewController = [[PageViewControllerObj_C alloc]initWithNibName:@"PageViewControllerParent" bundle:nil];
+            [self.navigationController pushViewController:viewController animated:YES];
+            //[self performSegueWithIdentifier:@"PageViewControllerObjc" sender:nil];
         }
     }
     

@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PageViewControllerParent.h"
 
-@interface PageViewControllerObj_C : UIViewController <UIPageViewControllerDataSource>
+@interface PageViewControllerObj_C : PageViewControllerParent <UIPageViewControllerDataSource>
 
 @property (strong, nonatomic) UIPageViewController *pageController;
 

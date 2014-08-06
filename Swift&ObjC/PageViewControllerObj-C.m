@@ -31,6 +31,8 @@
     [self addChildViewController:self.pageController];
     [[self view] addSubview:[self.pageController view]];
     [self.pageController didMoveToParentViewController:self];
+    
+    [self.view setBackgroundColor:[UIColor blackColor]];
 }
 
 - (void)didReceiveMemoryWarning {

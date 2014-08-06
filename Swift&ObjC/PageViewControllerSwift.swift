@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PageViewControllerSwift: UIViewController, UIPageViewControllerDataSource {
+class PageViewControllerSwift: PageViewControllerParent, UIPageViewControllerDataSource {
     
     var pageController:UIPageViewController!
 
@@ -28,6 +28,7 @@ class PageViewControllerSwift: UIViewController, UIPageViewControllerDataSource 
         self.view.addSubview(pageController.view)
         pageController.didMoveToParentViewController(self)
         
+        self.view.backgroundColor = UIColor.blackColor()
     }
 
     override func didReceiveMemoryWarning() {

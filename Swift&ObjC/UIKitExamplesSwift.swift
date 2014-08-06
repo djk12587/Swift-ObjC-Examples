@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UIKitExamplesSwift: UITableViewController, UITextFieldDelegate {
+class UIKitExamplesSwift: UIKitTableViewControllerParent, UITextFieldDelegate {
     
     override func viewDidLoad()  {
         super.viewDidLoad()

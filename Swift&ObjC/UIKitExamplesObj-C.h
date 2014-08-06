@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIKitTableViewControllerParent.h"
 
-@interface UIKitExamplesObj_C : UITableViewController <UITextFieldDelegate>
+@interface UIKitExamplesObj_C : UIKitTableViewControllerParent <UITextFieldDelegate>
 
 @end

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainTableViewControllerSwift: UITableViewController {
+class MainTableViewControllerSwift: MainTableViewControllerParent {
     
     override func viewDidLoad()  {
         super.viewDidLoad()
@@ -25,7 +25,14 @@ class MainTableViewControllerSwift: UITableViewController {
     }
     
     override func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
-        var cell:UITableViewCell = tableView.dequeueReusableCellWithIdentifier("swiftCell") as UITableViewCell
+        
+        let identifier = "swiftCell"
+        
+        var cell:UITableViewCell! = tableView.dequeueReusableCellWithIdentifier(identifier) as? UITableViewCell
+        
+        if cell == nil {
+            cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: identifier)
+        }
         
         switch indexPath.row {
         case 0:
@@ -51,11 +58,15 @@ class MainTableViewControllerSwift: UITableViewController {
         
         switch indexPath.row {
         case 0:
-            self.performSegueWithIdentifier("UIKitExamplesSwift", sender: nil)
+            let viewController = UIKitExamplesSwift(nibName: "UIKitTableViewControllerParent", bundle: nil)
+            self.navigationController.pushViewController(viewController, animated: true)
         case 1:
-            self.performSegueWithIdentifier("UICollectionViewSwift", sender: nil)
+            let viewController = CollectionViewSwift(nibName: "CCDetailCollectionViewController", bundle: nil)
+            self.navigationController.pushViewController(viewController, animated: true)
+            //self.performSegueWithIdentifier("UICollectionViewSwift", sender: nil)
         default:
-            self.performSegueWithIdentifier("PageViewControllerSwift", sender: nil)
+            let viewController = PageViewControllerSwift(nibName: "PageViewControllerParent", bundle: nil)
+            self.navigationController.pushViewController(viewController, animated: true)
         }
     }
 

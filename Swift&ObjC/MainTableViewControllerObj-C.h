@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MainTableViewControllerParent.h"
 
-@interface MainTableViewControllerObj_C : UITableViewController
+@interface MainTableViewControllerObj_C : MainTableViewControllerParent
 
 @end
