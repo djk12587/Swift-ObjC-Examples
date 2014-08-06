@@ -63,9 +63,11 @@ class MainTableViewControllerSwift: MainTableViewControllerParent {
         case 1:
             let viewController = CollectionViewSwift(nibName: "CCDetailCollectionViewController", bundle: nil)
             self.navigationController.pushViewController(viewController, animated: true)
-            //self.performSegueWithIdentifier("UICollectionViewSwift", sender: nil)
-        default:
+        case 2:
             let viewController = PageViewControllerSwift(nibName: "PageViewControllerParent", bundle: nil)
+            self.navigationController.pushViewController(viewController, animated: true)
+        default:
+            let viewController = MapViewControllerSwift(nibName: "MapViewControllerParent", bundle: nil)
             self.navigationController.pushViewController(viewController, animated: true)
         }
     }

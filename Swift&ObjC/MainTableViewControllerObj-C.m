@@ -10,6 +10,7 @@
 #import "UIKitExamplesObj-C.h"
 #import "CollectionViewObj-C.h"
 #import "PageViewControllerObj-C.h"
+#import "MapViewViewControllerObj-C.h"
 
 @implementation MainTableViewControllerObj_C
 
@@ -29,11 +30,11 @@
 
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString *CellIdentifier = @"objcCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"objcCell"];
+    static NSString *cellIdentifier = @"objcCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
     if (cell == nil) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
     }
     
     switch (indexPath.row) {
@@ -78,8 +79,13 @@
         case 2: {
             PageViewControllerObj_C *viewController = [[PageViewControllerObj_C alloc]initWithNibName:@"PageViewControllerParent" bundle:nil];
             [self.navigationController pushViewController:viewController animated:YES];
-            //[self performSegueWithIdentifier:@"PageViewControllerObjc" sender:nil];
         }
+            break;
+        case 3: {
+            MapViewViewControllerObj_C *viewController = [[MapViewViewControllerObj_C alloc]initWithNibName:@"MapViewControllerParent" bundle:nil];
+            [self.navigationController pushViewController:viewController animated:YES];
+        }
+            break;
     }
     
     
