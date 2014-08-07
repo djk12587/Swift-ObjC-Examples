@@ -37,11 +37,30 @@
     [self.myResultsTableView setBackgroundView:blurEffectView];
     
     _resultArray = [[NSMutableArray alloc]init];
+    
+    [self.myMapView setDelegate:self];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void) tableViewShouldBeVisible:(BOOL)isVisible withCompletion:(void (^) (void))completed {
+    CGFloat alplha = 0.0;
+    
+    if (isVisible) {
+        alplha = 1.0;
+    }
+    
+    __weak __block MapViewViewControllerObj_C *weakSelf = self;
+    
+    [UIView animateWithDuration:0.3 animations:^{
+        [weakSelf.myResultsTableView setAlpha:alplha];
+    } completion:^(BOOL finished) {
+        completed();
+    }];
+    
 }
 
 #pragma mark - UITableView Delegate Methods
@@ -75,7 +94,98 @@
 }
 
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    [_mySearchBar resignFirstResponder];
+    
+    __weak __block MapViewViewControllerObj_C *weakSelf = self;
+    [self tableViewShouldBeVisible:false withCompletion:^{
+        MKMapItem *mapItem = [weakSelf.resultArray objectAtIndex:indexPath.row];
+        
+        MKPointAnnotation *annotationPin = [[MKPointAnnotation alloc]init];
+        [annotationPin setCoordinate:mapItem.placemark.coordinate];
+        [annotationPin setTitle:mapItem.placemark.name];
+        
+        [weakSelf.myMapView addAnnotation:annotationPin];
+        [weakSelf.myMapView selectAnnotation:annotationPin animated:YES];
+        
+    }];
+    
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+- (void) scrollViewWillBeginDragging:(UIScrollView *)scrollView {
+    [_mySearchBar resignFirstResponder];
+}
+
+#pragma mark - UISearchBar Delegate Methods
+
+- (void) searchBarTextDidBeginEditing:(UISearchBar *)searchBar {
+    [searchBar setShowsCancelButton:YES animated:YES];
+    [self tableViewShouldBeVisible:YES withCompletion:^{}];
+}
+
+- (void) searchBarTextDidEndEditing:(UISearchBar *)searchBar {
+    [searchBar setShowsCancelButton:NO animated:YES];
+    if (_resultArray.count == 0) {
+        [self tableViewShouldBeVisible:false withCompletion:^{}];
+    }
+}
+
+- (void) searchBarCancelButtonClicked:(UISearchBar *)searchBar {
+    [searchBar resignFirstResponder];
+    [self tableViewShouldBeVisible:false withCompletion:^{}];
+}
+
+- (void) searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
+    MKLocalSearchRequest *searchRequest = [[MKLocalSearchRequest alloc]init];
+    [searchRequest setNaturalLanguageQuery:searchText];
+    
+    __weak __block MapViewViewControllerObj_C *weakSelf = self;
+    
+    MKLocalSearchCompletionHandler completionHandler = ^void(MKLocalSearchResponse *response, NSError *error) {
+        if (error == nil) {
+            if (weakSelf.resultArray) {
+                [weakSelf.resultArray removeAllObjects];
+            } else {
+                weakSelf.resultArray = [[NSMutableArray alloc]init];
+            }
+            
+            for (MKMapItem *item in response.mapItems) {
+                [weakSelf.resultArray addObject:item];
+            }
+            
+            [weakSelf.myResultsTableView reloadData];
+        } else {
+            //there was an error with the response
+        }
+    };
+    
+    if (_localSearch && _localSearch.searching) {
+        [_localSearch cancel];
+    }
+    
+    _localSearch = [[MKLocalSearch alloc]initWithRequest:searchRequest];
+    [_localSearch startWithCompletionHandler:completionHandler];
+
+}
+
+#pragma mark - UIMapView Delegate Methods
+
+- (MKAnnotationView *) mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
+    MKPinAnnotationView *pinView = nil;
+    
+    static NSString *pinIdentifier = @"pinID";
+    
+    pinView = (MKPinAnnotationView *)[self.myMapView dequeueReusableAnnotationViewWithIdentifier:pinIdentifier];
+    
+    if (pinView == nil) {
+        pinView = [[MKPinAnnotationView alloc]initWithAnnotation:annotation reuseIdentifier:pinIdentifier];
+    }
+    
+    [pinView setAnimatesDrop:YES];
+    [pinView setCanShowCallout:YES];
+    
+    return pinView;
 }
 
 @end

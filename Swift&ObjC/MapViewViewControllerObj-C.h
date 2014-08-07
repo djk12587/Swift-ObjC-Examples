@@ -8,7 +8,7 @@
 
 #import "MapViewControllerParent.h"
 
-@interface MapViewViewControllerObj_C : MapViewControllerParent <UISearchBarDelegate, UITableViewDataSource, UITableViewDelegate>
+@interface MapViewViewControllerObj_C : MapViewControllerParent <UISearchBarDelegate, UITableViewDataSource, UITableViewDelegate, MKMapViewDelegate>
 
 @property (nonatomic, strong) UISearchBar *mySearchBar;
 @property (nonatomic, strong) NSMutableArray *resultArray;

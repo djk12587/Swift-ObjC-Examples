@@ -36,6 +36,8 @@ class MapViewControllerSwift: MapViewControllerParent, UISearchBarDelegate , UIT
         myResultsTableView.backgroundView = blurEffectView
         myResultsTableView.contentInset = UIEdgeInsets(top: 64, left: 0, bottom: 0, right: 0)
         
+        myMapView.delegate = self
+        
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -162,7 +164,7 @@ class MapViewControllerSwift: MapViewControllerParent, UISearchBarDelegate , UIT
                 weakSelf!.myResultsTableView.reloadData()
                 
             } else {
-                
+                //there was an error in the response
             }
         }
             
