@@ -162,7 +162,7 @@ class MapViewControllerSwift: MapViewControllerParent, UISearchBarDelegate , UIT
                 weakSelf!.myResultsTableView.reloadData()
                 
             } else {
-
+                
             }
         }
             
