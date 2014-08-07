@@ -11,6 +11,7 @@
 #import "CollectionViewObj-C.h"
 #import "PageViewControllerObj-C.h"
 #import "MapViewViewControllerObj-C.h"
+#import "CatViewControllerObj-C.h"
 
 @implementation MainTableViewControllerObj_C
 
@@ -83,6 +84,11 @@
             break;
         case 3: {
             MapViewViewControllerObj_C *viewController = [[MapViewViewControllerObj_C alloc]initWithNibName:@"MapViewControllerParent" bundle:nil];
+            [self.navigationController pushViewController:viewController animated:YES];
+        }
+            break;
+        case 4: {
+            CatViewControllerObj_C *viewController = [[CatViewControllerObj_C alloc]initWithNibName:@"CatViewControllerParent" bundle:nil];
             [self.navigationController pushViewController:viewController animated:YES];
         }
             break;

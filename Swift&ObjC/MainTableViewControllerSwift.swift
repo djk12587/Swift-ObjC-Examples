@@ -66,8 +66,11 @@ class MainTableViewControllerSwift: MainTableViewControllerParent {
         case 2:
             let viewController = PageViewControllerSwift(nibName: "PageViewControllerParent", bundle: nil)
             self.navigationController.pushViewController(viewController, animated: true)
-        default:
+        case 3:
             let viewController = MapViewControllerSwift(nibName: "MapViewControllerParent", bundle: nil)
+            self.navigationController.pushViewController(viewController, animated: true)
+        default:
+            let viewController = CatViewControllerSwift(nibName: "CatViewControllerParent", bundle: nil)
             self.navigationController.pushViewController(viewController, animated: true)
         }
     }
