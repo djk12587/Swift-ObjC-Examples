@@ -32,7 +32,6 @@
 		D53807281993E9860004DEEB /* CatViewControllerParent.m in Sources */ = {isa = PBXBuildFile; fileRef = D53807261993E9860004DEEB /* CatViewControllerParent.m */; };
 		D53807291993E9860004DEEB /* CatViewControllerParent.xib in Resources */ = {isa = PBXBuildFile; fileRef = D53807271993E9860004DEEB /* CatViewControllerParent.xib */; };
 		D538072C1993F7720004DEEB /* CatViewControllerObj-C.m in Sources */ = {isa = PBXBuildFile; fileRef = D538072B1993F7720004DEEB /* CatViewControllerObj-C.m */; };
-		D538072E199404E10004DEEB /* UIImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D538072D199404E10004DEEB /* UIImageHelper.swift */; };
 		D53FB36819940A800012A898 /* UIImage+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = D53FB36619940A800012A898 /* UIImage+Helper.m */; };
 		D53FB36A19940EDD0012A898 /* CatViewControllerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53FB36919940EDD0012A898 /* CatViewControllerSwift.swift */; };
 		D56090EE19900F320092AA36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56090ED19900F320092AA36 /* AppDelegate.swift */; };
@@ -96,7 +95,6 @@
 		D53807271993E9860004DEEB /* CatViewControllerParent.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CatViewControllerParent.xib; sourceTree = "<group>"; };
 		D538072A1993F7720004DEEB /* CatViewControllerObj-C.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CatViewControllerObj-C.h"; sourceTree = "<group>"; };
 		D538072B1993F7720004DEEB /* CatViewControllerObj-C.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CatViewControllerObj-C.m"; sourceTree = "<group>"; };
-		D538072D199404E10004DEEB /* UIImageHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageHelper.swift; sourceTree = "<group>"; };
 		D53FB36619940A800012A898 /* UIImage+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Helper.m"; sourceTree = "<group>"; };
 		D53FB36719940A800012A898 /* UIImage+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Helper.h"; sourceTree = "<group>"; };
 		D53FB36919940EDD0012A898 /* CatViewControllerSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatViewControllerSwift.swift; sourceTree = "<group>"; };
@@ -321,7 +319,6 @@
 		D53807241993E6720004DEEB /* Swift */ = {
 			isa = PBXGroup;
 			children = (
-				D538072D199404E10004DEEB /* UIImageHelper.swift */,
 				D53FB36919940EDD0012A898 /* CatViewControllerSwift.swift */,
 			);
 			name = Swift;
@@ -507,7 +504,6 @@
 				D538072C1993F7720004DEEB /* CatViewControllerObj-C.m in Sources */,
 				D52CE6AB19908A2900A82A7A /* CCDetailCollectionViewController.m in Sources */,
 				D5DAA8AB1991747600BB616D /* PageViewControllerSwift.swift in Sources */,
-				D538072E199404E10004DEEB /* UIImageHelper.swift in Sources */,
 				D53807111992B7ED0004DEEB /* MainTableViewControllerParent.m in Sources */,
 				D56090EE19900F320092AA36 /* AppDelegate.swift in Sources */,
 				D5DAA8A8199171B800BB616D /* ChildPageViewController.swift in Sources */,
