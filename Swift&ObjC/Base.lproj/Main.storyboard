@@ -35,18 +35,18 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kO8-36-CCw">
                                 <rect key="frame" x="150" y="150" width="300" height="300"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9FX-RC-70q">
-                                        <rect key="frame" x="129" y="270" width="42" height="30"/>
-                                        <state key="normal" title="Obj-C">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9FX-RC-70q">
+                                        <rect key="frame" x="47" y="112" width="76" height="76"/>
+                                        <state key="normal" image="objC_logo">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <action selector="objCAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="LZu-Qn-sas"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buw-L1-HfH">
-                                        <rect key="frame" x="129" y="0.0" width="42" height="30"/>
-                                        <state key="normal" title="Swift">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buw-L1-HfH">
+                                        <rect key="frame" x="176" y="112" width="76" height="76"/>
+                                        <state key="normal" image="swift_logo">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -73,4 +73,8 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="objC_logo" width="76" height="76"/>
+        <image name="swift_logo" width="128" height="128"/>
+    </resources>
 </document>
