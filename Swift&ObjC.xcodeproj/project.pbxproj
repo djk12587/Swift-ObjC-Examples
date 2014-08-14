@@ -39,6 +39,13 @@
 		D56090F319900F320092AA36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D56090F119900F320092AA36 /* Main.storyboard */; };
 		D56090F519900F320092AA36 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D56090F419900F320092AA36 /* Images.xcassets */; };
 		D560910119900F320092AA36 /* Swift_ObjCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D560910019900F320092AA36 /* Swift_ObjCTests.swift */; };
+		D582A9BA199D56E7001D82B8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D582A9B9199D56E7001D82B8 /* CoreData.framework */; };
+		D582A9C6199D572D001D82B8 /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D582A9BF199D572D001D82B8 /* CoreDataHelper.m */; };
+		D582A9C7199D572D001D82B8 /* CoreDataHelper+Saver.m in Sources */ = {isa = PBXBuildFile; fileRef = D582A9C1199D572D001D82B8 /* CoreDataHelper+Saver.m */; };
+		D582A9C8199D572D001D82B8 /* NSManagedObject+Creation.m in Sources */ = {isa = PBXBuildFile; fileRef = D582A9C3199D572D001D82B8 /* NSManagedObject+Creation.m */; };
+		D582A9C9199D572D001D82B8 /* NSManagedObject+Fetch.m in Sources */ = {isa = PBXBuildFile; fileRef = D582A9C5199D572D001D82B8 /* NSManagedObject+Fetch.m */; };
+		D582A9CD199D5906001D82B8 /* CoreDataHelperSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D582A9CC199D5906001D82B8 /* CoreDataHelperSwift.swift */; };
+		D582A9D0199D757F001D82B8 /* SwiftModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D582A9CE199D757F001D82B8 /* SwiftModel.xcdatamodeld */; };
 		D5DAA8A8199171B800BB616D /* ChildPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DAA8A6199171B800BB616D /* ChildPageViewController.swift */; };
 		D5DAA8A9199171B800BB616D /* ChildPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5DAA8A7199171B800BB616D /* ChildPageViewController.xib */; };
 		D5DAA8AB1991747600BB616D /* PageViewControllerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DAA8AA1991747600BB616D /* PageViewControllerSwift.swift */; };
@@ -107,6 +114,17 @@
 		D56090FA19900F320092AA36 /* Swift&ObjCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift&ObjCTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D56090FF19900F320092AA36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D560910019900F320092AA36 /* Swift_ObjCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_ObjCTests.swift; sourceTree = "<group>"; };
+		D582A9B9199D56E7001D82B8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D582A9BE199D572D001D82B8 /* CoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataHelper.h; sourceTree = "<group>"; };
+		D582A9BF199D572D001D82B8 /* CoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataHelper.m; sourceTree = "<group>"; };
+		D582A9C0199D572D001D82B8 /* CoreDataHelper+Saver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreDataHelper+Saver.h"; sourceTree = "<group>"; };
+		D582A9C1199D572D001D82B8 /* CoreDataHelper+Saver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CoreDataHelper+Saver.m"; sourceTree = "<group>"; };
+		D582A9C2199D572D001D82B8 /* NSManagedObject+Creation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+Creation.h"; sourceTree = "<group>"; };
+		D582A9C3199D572D001D82B8 /* NSManagedObject+Creation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+Creation.m"; sourceTree = "<group>"; };
+		D582A9C4199D572D001D82B8 /* NSManagedObject+Fetch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+Fetch.h"; sourceTree = "<group>"; };
+		D582A9C5199D572D001D82B8 /* NSManagedObject+Fetch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+Fetch.m"; sourceTree = "<group>"; };
+		D582A9CC199D5906001D82B8 /* CoreDataHelperSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelperSwift.swift; sourceTree = "<group>"; };
+		D582A9CF199D757F001D82B8 /* SwiftModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftModel.xcdatamodel; sourceTree = "<group>"; };
 		D5DAA8A6199171B800BB616D /* ChildPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildPageViewController.swift; sourceTree = "<group>"; };
 		D5DAA8A7199171B800BB616D /* ChildPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChildPageViewController.xib; sourceTree = "<group>"; };
 		D5DAA8AA1991747600BB616D /* PageViewControllerSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewControllerSwift.swift; sourceTree = "<group>"; };
@@ -119,6 +137,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D582A9BA199D56E7001D82B8 /* CoreData.framework in Frameworks */,
 				D538071C1992C46C0004DEEB /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +307,7 @@
 		D538071A1992C4520004DEEB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D582A9B9199D56E7001D82B8 /* CoreData.framework */,
 				D538071B1992C46C0004DEEB /* MapKit.framework */,
 			);
 			name = Frameworks;
@@ -355,6 +375,7 @@
 				D52542AD19916C240052FDEB /* UIPageViewController */,
 				D53806EF19927DFF0004DEEB /* MapView */,
 				D53807221993E64B0004DEEB /* Consume Webservice */,
+				D582A9BB199D56FD001D82B8 /* CoreData */,
 				D56090F419900F320092AA36 /* Images.xcassets */,
 				D56090EB19900F320092AA36 /* Supporting Files */,
 			);
@@ -385,6 +406,55 @@
 				D56090FF19900F320092AA36 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D582A9BB199D56FD001D82B8 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				D582A9BD199D5717001D82B8 /* Obj-C */,
+				D582A9BC199D570F001D82B8 /* Swift */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		D582A9BC199D570F001D82B8 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				D582A9CB199D58B7001D82B8 /* CoreDataHelperSwift */,
+			);
+			name = Swift;
+			sourceTree = "<group>";
+		};
+		D582A9BD199D5717001D82B8 /* Obj-C */ = {
+			isa = PBXGroup;
+			children = (
+				D582A9CA199D5821001D82B8 /* CoreDataHelperObj-C */,
+			);
+			name = "Obj-C";
+			sourceTree = "<group>";
+		};
+		D582A9CA199D5821001D82B8 /* CoreDataHelperObj-C */ = {
+			isa = PBXGroup;
+			children = (
+				D582A9BE199D572D001D82B8 /* CoreDataHelper.h */,
+				D582A9BF199D572D001D82B8 /* CoreDataHelper.m */,
+				D582A9C0199D572D001D82B8 /* CoreDataHelper+Saver.h */,
+				D582A9C1199D572D001D82B8 /* CoreDataHelper+Saver.m */,
+				D582A9C2199D572D001D82B8 /* NSManagedObject+Creation.h */,
+				D582A9C3199D572D001D82B8 /* NSManagedObject+Creation.m */,
+				D582A9C4199D572D001D82B8 /* NSManagedObject+Fetch.h */,
+				D582A9C5199D572D001D82B8 /* NSManagedObject+Fetch.m */,
+			);
+			name = "CoreDataHelperObj-C";
+			sourceTree = "<group>";
+		};
+		D582A9CB199D58B7001D82B8 /* CoreDataHelperSwift */ = {
+			isa = PBXGroup;
+			children = (
+				D582A9CC199D5906001D82B8 /* CoreDataHelperSwift.swift */,
+				D582A9CE199D757F001D82B8 /* SwiftModel.xcdatamodeld */,
+			);
+			name = CoreDataHelperSwift;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -494,12 +564,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D582A9C8199D572D001D82B8 /* NSManagedObject+Creation.m in Sources */,
+				D582A9CD199D5906001D82B8 /* CoreDataHelperSwift.swift in Sources */,
 				D52CE69E1990257B00A82A7A /* UIKitExamplesObj-C.m in Sources */,
 				D52CE6A01990258E00A82A7A /* UIKitExamplesSwift.swift in Sources */,
 				D52CE69819901B0000A82A7A /* MainTableViewControllerObj-C.m in Sources */,
+				D582A9C9199D572D001D82B8 /* NSManagedObject+Fetch.m in Sources */,
 				D52CE6B519908EEF00A82A7A /* CollectionViewSwift.swift in Sources */,
 				D52CE69119901A4D00A82A7A /* MainTableViewControllerSwift.swift in Sources */,
 				D56090F019900F320092AA36 /* ViewController.swift in Sources */,
+				D582A9D0199D757F001D82B8 /* SwiftModel.xcdatamodeld in Sources */,
+				D582A9C7199D572D001D82B8 /* CoreDataHelper+Saver.m in Sources */,
 				D53807211992E5E70004DEEB /* MapViewViewControllerObj-C.m in Sources */,
 				D538072C1993F7720004DEEB /* CatViewControllerObj-C.m in Sources */,
 				D52CE6AB19908A2900A82A7A /* CCDetailCollectionViewController.m in Sources */,
@@ -512,6 +587,7 @@
 				D538070C1992B1FF0004DEEB /* PageViewControllerParent.m in Sources */,
 				D53FB36A19940EDD0012A898 /* CatViewControllerSwift.swift in Sources */,
 				D53807161992C3610004DEEB /* MapViewControllerParent.m in Sources */,
+				D582A9C6199D572D001D82B8 /* CoreDataHelper.m in Sources */,
 				D538071E1992C5BE0004DEEB /* MapViewControllerSwift.swift in Sources */,
 				D53807281993E9860004DEEB /* CatViewControllerParent.m in Sources */,
 				D52CE6B219908A9100A82A7A /* MainCollectionViewCell.m in Sources */,
@@ -722,6 +798,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D582A9CE199D757F001D82B8 /* SwiftModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D582A9CF199D757F001D82B8 /* SwiftModel.xcdatamodel */,
+			);
+			currentVersion = D582A9CF199D757F001D82B8 /* SwiftModel.xcdatamodel */;
+			path = SwiftModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D56090E019900F320092AA36 /* Project object */;
 }

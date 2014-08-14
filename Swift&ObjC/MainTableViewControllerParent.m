@@ -7,6 +7,7 @@
 //
 
 #import "MainTableViewControllerParent.h"
+#import "CoreDataHelper.h"
 
 @interface MainTableViewControllerParent ()
 

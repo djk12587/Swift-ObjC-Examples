@@ -67,7 +67,7 @@ class MapViewControllerSwift: MapViewControllerParent, UISearchBarDelegate , UIT
     }
     
 
-    //MARK: UITableview Delegate Methods
+    //MARK: - UITableview Delegate Methods
     func numberOfSectionsInTableView(tableView: UITableView!) -> Int {
         return 1
     }
@@ -119,7 +119,7 @@ class MapViewControllerSwift: MapViewControllerParent, UISearchBarDelegate , UIT
         mySearchBar.resignFirstResponder()
     }
     
-    //MARK: UISearchBar Delegate Methods
+    //MARK: - UISearchBar Delegate Methods
     
     func searchBarTextDidBeginEditing(searchBar: UISearchBar!)  {
         searchBar.setShowsCancelButton(true, animated: true)
@@ -177,7 +177,7 @@ class MapViewControllerSwift: MapViewControllerParent, UISearchBarDelegate , UIT
         
     }
     
-    //MARK: UIMapView Delegate Methods
+    //MARK: - UIMapView Delegate Methods
     
     func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
         

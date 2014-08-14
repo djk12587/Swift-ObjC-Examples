@@ -14,6 +14,9 @@ class MainTableViewControllerSwift: MainTableViewControllerParent {
         super.viewDidLoad()
         
         self.title = "Swift"
+        
+        //println(CoreDataHelperSwift.defaultStore)
+        println(CoreDataHelperSwift.getPrivateQueueContext())
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView!) -> Int {
