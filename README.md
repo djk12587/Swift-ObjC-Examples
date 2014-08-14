@@ -14,6 +14,6 @@ A sample application that demonstrates how to create common Cocoa Touch elements
 5. Consume Webservice
     - Displays a random cat fact and random cat picture
     - Pictures are refrenced from tumbler that are tagged with "cat". 
-        - There is a chance that a weird picture could appear.
+        - There is a chance that a "non" cat picture could appear.
 6. Core Data
     - TODO: add Core Data integration for both Obj-C & Swift.
