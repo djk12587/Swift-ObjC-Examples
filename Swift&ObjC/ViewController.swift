@@ -14,8 +14,26 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        //println(CoreDataHelperSwift.defaultStore)
-        println(CoreDataHelperSwift.getMainQueueContext())
+//        CoreDataHelperSwift.core_saveInMainContext { () -> () in
+//            var entity:ExampleEntitySwift = ExampleEntitySwift.core_createInContext(CoreDataHelperSwift.getMainQueueContext()) as ExampleEntitySwift
+//            
+//            println(NSDate())
+//            entity.date = NSDate()
+//        }
+        
+//        CoreDataHelperSwift.core_saveInPrivateQueue({ () -> () in
+//            var entity:ExampleEntitySwift = ExampleEntitySwift.core_createInContext(CoreDataHelperSwift.getPrivateQueueContext()) as ExampleEntitySwift
+//            
+//            println(NSDate())
+//            entity.date = NSDate()
+//        }, completion: { (error) -> () in
+//            println("Save completed error:\(error)")
+//        })
+        
+//        var fetchedEntitys = ExampleEntitySwift.core_findAllWithPredicate(nil, context: CoreDataHelperSwift.getMainQueueContext())
+//        println(fetchedEntitys)
+//        var entity = fetchedEntitys!.firstObject as ExampleEntitySwift
+//        println(entity.date)
     }
 
     override func didReceiveMemoryWarning() {

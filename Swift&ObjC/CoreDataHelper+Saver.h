@@ -8,6 +8,9 @@
 
 #import "CoreDataHelper.h"
 
+typedef void (^CoreSimpleBlock)();
+typedef void (^CoreErrorBlock)(NSError *error);
+
 @interface CoreDataHelper (Saver)
 
 //Perform saves in the main context on the main UI thread

@@ -10,3 +10,4 @@
 #import "MainTableViewControllerObj-C.h"
 #import "MapViewControllerParent.h"
 #import "CatViewControllerParent.h"
+#import "ExampleEntitySwift.h"

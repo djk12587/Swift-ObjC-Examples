@@ -46,6 +46,10 @@
 		D582A9C9199D572D001D82B8 /* NSManagedObject+Fetch.m in Sources */ = {isa = PBXBuildFile; fileRef = D582A9C5199D572D001D82B8 /* NSManagedObject+Fetch.m */; };
 		D582A9CD199D5906001D82B8 /* CoreDataHelperSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D582A9CC199D5906001D82B8 /* CoreDataHelperSwift.swift */; };
 		D582A9D0199D757F001D82B8 /* SwiftModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D582A9CE199D757F001D82B8 /* SwiftModel.xcdatamodeld */; };
+		D582A9D2199E5184001D82B8 /* NSManagedObject+CreationSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D582A9D1199E5184001D82B8 /* NSManagedObject+CreationSwift.swift */; };
+		D582A9E0199E5B11001D82B8 /* ExampleEntitySwift.m in Sources */ = {isa = PBXBuildFile; fileRef = D582A9DF199E5B11001D82B8 /* ExampleEntitySwift.m */; };
+		D582A9E2199E5C5B001D82B8 /* NSManagedObject+FetchSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D582A9E1199E5C5B001D82B8 /* NSManagedObject+FetchSwift.swift */; };
+		D582A9E4199E61FE001D82B8 /* CoreDataHelperSwift+Saver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D582A9E3199E61FE001D82B8 /* CoreDataHelperSwift+Saver.swift */; };
 		D5DAA8A8199171B800BB616D /* ChildPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DAA8A6199171B800BB616D /* ChildPageViewController.swift */; };
 		D5DAA8A9199171B800BB616D /* ChildPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5DAA8A7199171B800BB616D /* ChildPageViewController.xib */; };
 		D5DAA8AB1991747600BB616D /* PageViewControllerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DAA8AA1991747600BB616D /* PageViewControllerSwift.swift */; };
@@ -125,6 +129,11 @@
 		D582A9C5199D572D001D82B8 /* NSManagedObject+Fetch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+Fetch.m"; sourceTree = "<group>"; };
 		D582A9CC199D5906001D82B8 /* CoreDataHelperSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelperSwift.swift; sourceTree = "<group>"; };
 		D582A9CF199D757F001D82B8 /* SwiftModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftModel.xcdatamodel; sourceTree = "<group>"; };
+		D582A9D1199E5184001D82B8 /* NSManagedObject+CreationSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+CreationSwift.swift"; sourceTree = "<group>"; };
+		D582A9DE199E5B11001D82B8 /* ExampleEntitySwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleEntitySwift.h; sourceTree = "<group>"; };
+		D582A9DF199E5B11001D82B8 /* ExampleEntitySwift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleEntitySwift.m; sourceTree = "<group>"; };
+		D582A9E1199E5C5B001D82B8 /* NSManagedObject+FetchSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+FetchSwift.swift"; sourceTree = "<group>"; };
+		D582A9E3199E61FE001D82B8 /* CoreDataHelperSwift+Saver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CoreDataHelperSwift+Saver.swift"; sourceTree = "<group>"; };
 		D5DAA8A6199171B800BB616D /* ChildPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildPageViewController.swift; sourceTree = "<group>"; };
 		D5DAA8A7199171B800BB616D /* ChildPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChildPageViewController.xib; sourceTree = "<group>"; };
 		D5DAA8AA1991747600BB616D /* PageViewControllerSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewControllerSwift.swift; sourceTree = "<group>"; };
@@ -420,6 +429,7 @@
 		D582A9BC199D570F001D82B8 /* Swift */ = {
 			isa = PBXGroup;
 			children = (
+				D582A9DD199E5AF2001D82B8 /* CoreDataModel&SubClasses */,
 				D582A9CB199D58B7001D82B8 /* CoreDataHelperSwift */,
 			);
 			name = Swift;
@@ -452,9 +462,21 @@
 			isa = PBXGroup;
 			children = (
 				D582A9CC199D5906001D82B8 /* CoreDataHelperSwift.swift */,
-				D582A9CE199D757F001D82B8 /* SwiftModel.xcdatamodeld */,
+				D582A9D1199E5184001D82B8 /* NSManagedObject+CreationSwift.swift */,
+				D582A9E1199E5C5B001D82B8 /* NSManagedObject+FetchSwift.swift */,
+				D582A9E3199E61FE001D82B8 /* CoreDataHelperSwift+Saver.swift */,
 			);
 			name = CoreDataHelperSwift;
+			sourceTree = "<group>";
+		};
+		D582A9DD199E5AF2001D82B8 /* CoreDataModel&SubClasses */ = {
+			isa = PBXGroup;
+			children = (
+				D582A9CE199D757F001D82B8 /* SwiftModel.xcdatamodeld */,
+				D582A9DE199E5B11001D82B8 /* ExampleEntitySwift.h */,
+				D582A9DF199E5B11001D82B8 /* ExampleEntitySwift.m */,
+			);
+			name = "CoreDataModel&SubClasses";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -569,12 +591,14 @@
 				D52CE69E1990257B00A82A7A /* UIKitExamplesObj-C.m in Sources */,
 				D52CE6A01990258E00A82A7A /* UIKitExamplesSwift.swift in Sources */,
 				D52CE69819901B0000A82A7A /* MainTableViewControllerObj-C.m in Sources */,
+				D582A9E0199E5B11001D82B8 /* ExampleEntitySwift.m in Sources */,
 				D582A9C9199D572D001D82B8 /* NSManagedObject+Fetch.m in Sources */,
 				D52CE6B519908EEF00A82A7A /* CollectionViewSwift.swift in Sources */,
 				D52CE69119901A4D00A82A7A /* MainTableViewControllerSwift.swift in Sources */,
 				D56090F019900F320092AA36 /* ViewController.swift in Sources */,
 				D582A9D0199D757F001D82B8 /* SwiftModel.xcdatamodeld in Sources */,
 				D582A9C7199D572D001D82B8 /* CoreDataHelper+Saver.m in Sources */,
+				D582A9D2199E5184001D82B8 /* NSManagedObject+CreationSwift.swift in Sources */,
 				D53807211992E5E70004DEEB /* MapViewViewControllerObj-C.m in Sources */,
 				D538072C1993F7720004DEEB /* CatViewControllerObj-C.m in Sources */,
 				D52CE6AB19908A2900A82A7A /* CCDetailCollectionViewController.m in Sources */,
@@ -586,8 +610,10 @@
 				D53FB36819940A800012A898 /* UIImage+Helper.m in Sources */,
 				D538070C1992B1FF0004DEEB /* PageViewControllerParent.m in Sources */,
 				D53FB36A19940EDD0012A898 /* CatViewControllerSwift.swift in Sources */,
+				D582A9E4199E61FE001D82B8 /* CoreDataHelperSwift+Saver.swift in Sources */,
 				D53807161992C3610004DEEB /* MapViewControllerParent.m in Sources */,
 				D582A9C6199D572D001D82B8 /* CoreDataHelper.m in Sources */,
+				D582A9E2199E5C5B001D82B8 /* NSManagedObject+FetchSwift.swift in Sources */,
 				D538071E1992C5BE0004DEEB /* MapViewControllerSwift.swift in Sources */,
 				D53807281993E9860004DEEB /* CatViewControllerParent.m in Sources */,
 				D52CE6B219908A9100A82A7A /* MainCollectionViewCell.m in Sources */,

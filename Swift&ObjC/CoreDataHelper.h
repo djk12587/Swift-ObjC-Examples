@@ -9,9 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-typedef void (^CoreSimpleBlock)();
-typedef void (^CoreErrorBlock)(NSError *error);
-
 @interface CoreDataHelper : NSObject
 
 //initialize the core data stack, this should be called in the app delegate application did finish launching
