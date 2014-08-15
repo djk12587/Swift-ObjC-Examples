@@ -17,10 +17,10 @@ typedef void (^CoreErrorBlock)(NSError *error);
 + (void)core_saveInMainContext:(CoreSimpleBlock)changes;
 
 //Perform all the changes in a background queue and then merge everything into the main context
-+ (void)core_saveInBackground:(CoreSimpleBlock)changes;
++ (void)core_saveInPrivateContext:(CoreSimpleBlock)changes;
 
 //Perform all the changes in a background queue and then merge everything into the main context.
 //The completion block is called straight after the background context has been saved and
 //all the changes might not be merged into the main context yet.
-+ (void)core_saveInBackground:(CoreSimpleBlock)changes completion:(CoreErrorBlock)completion;
++ (void)core_saveInPrivateContext:(CoreSimpleBlock)changes completion:(CoreErrorBlock)completion;
 @end

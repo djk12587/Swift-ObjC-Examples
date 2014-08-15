@@ -31,9 +31,9 @@ class ViewController: UIViewController {
 //        })
         
 //        var fetchedEntitys = ExampleEntitySwift.core_findAllWithPredicate(nil, context: CoreDataHelperSwift.getMainQueueContext())
-//        println(fetchedEntitys)
+//        //println(fetchedEntitys)
 //        var entity = fetchedEntitys!.firstObject as ExampleEntitySwift
-//        println(entity.date)
+//        println("Swift: \(entity.date)")
     }
 
     override func didReceiveMemoryWarning() {

@@ -8,6 +8,11 @@
 
 #import "MainTableViewControllerParent.h"
 #import "CoreDataHelper.h"
+#import "ExampleEntityObjC.h"
+#import "CoreDataHelper.h"
+#import "NSManagedObject+Creation.h"
+#import "NSManagedObject+Fetch.h"
+#import "CoreDataHelper+Saver.h"
 
 @interface MainTableViewControllerParent ()
 
@@ -23,6 +28,19 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+//    [CoreDataHelper core_saveInMainContext:^{
+//        ExampleEntityObjC *entity = [ExampleEntityObjC core_createInContext:[CoreDataHelper mainQueueContext]];
+//        entity.date = [NSDate date];
+//    }];
+    
+//    NSArray *results = [ExampleEntityObjC core_findAllWithPredicate:nil inContext:[CoreDataHelper mainQueueContext]];
+//    //NSLog(@"%@",results);
+//    
+//    ExampleEntityObjC *entity = results.firstObject;
+//    NSLog(@"ObjC: %@",entity.date);
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

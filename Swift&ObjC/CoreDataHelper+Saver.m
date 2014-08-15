@@ -29,21 +29,19 @@
     }];
 }
 
-+ (void)core_saveInBackground:(CoreSimpleBlock)changes
-{
-    [self core_saveInBackground:changes completion:nil];
++ (void)core_saveInPrivateContext:(CoreSimpleBlock)changes {
+    [self core_saveInPrivateContext:changes completion:nil];
 }
 
-+ (void)core_saveInBackground:(CoreSimpleBlock)changes completion:(CoreErrorBlock)completion
-{
-    NSManagedObjectContext *backgroundContext = [[self defaultStore] privateQueueContext];
++ (void)core_saveInPrivateContext:(CoreSimpleBlock)changes completion:(CoreErrorBlock)completion {
+    NSManagedObjectContext *privateContext = [[self defaultStore] privateQueueContext];
     
-    [backgroundContext performBlock:^{
+    [privateContext performBlock:^{
         
         changes();
         
         NSError *error;
-        [backgroundContext save:&error];
+        [privateContext save:&error];
         
         if (error) {
             NSLog(@"Error saving background context: %@", error);

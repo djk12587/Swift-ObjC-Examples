@@ -10,7 +10,7 @@
 
 #import "CoreDataHelper.h"
 
-static NSString *const CoreDataModelFileName = @"SwiftModel";
+static NSString *const CoreDataModelFileName = @"ObjcModel";
 
 @interface CoreDataHelper ()
 
@@ -140,9 +140,8 @@ static NSString *const CoreDataModelFileName = @"SwiftModel";
 
 - (NSURL *)persistentStoreURL
 {
-    NSLog(@"%@",[[NSBundle mainBundle] infoDictionary]);
     NSString *appName = [[NSBundle mainBundle] infoDictionary][@"CFBundleName"];
-    appName = [appName stringByAppendingString:@".sqlite"];
+    appName = [appName stringByAppendingString:@"ObjC.sqlite"];
     
     return [[CoreDataHelper applicationDocumentsDirectory] URLByAppendingPathComponent:appName];
 }
@@ -154,6 +153,7 @@ static NSString *const CoreDataModelFileName = @"SwiftModel";
 
 + (NSURL *)applicationDocumentsDirectory {
     // The directory the application uses to store the Core Data store file. This code uses a directory named "com.allstate.rd.objCCoreData" in the application's documents directory.
+    NSLog(@"%@",[[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject]);
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
 
