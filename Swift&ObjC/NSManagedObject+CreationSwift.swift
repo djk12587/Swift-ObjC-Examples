@@ -17,7 +17,7 @@ protocol NamedManagedObject {
 
 extension ExampleEntitySwift : NamedManagedObject {
     override class func entityName() -> String {
-        return "ExampleEntitySwift"
+        return NSStringFromClass(self)
     }
 }
 
@@ -28,6 +28,7 @@ extension NSManagedObject : NamedManagedObject {
     }
     
     class func core_createInContext(context:NSManagedObjectContext) -> AnyObject {
+        println(self.entityName())
         return NSEntityDescription.insertNewObjectForEntityForName(self.entityName(), inManagedObjectContext: context)
     }
 }
