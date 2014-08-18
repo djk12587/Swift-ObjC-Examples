@@ -178,11 +178,7 @@
 		D52542AD19916C240052FDEB /* UIPageViewController */ = {
 			isa = PBXGroup;
 			children = (
-				D53807091992B1FF0004DEEB /* PageViewControllerParent.h */,
-				D538070A1992B1FF0004DEEB /* PageViewControllerParent.m */,
-				D538070B1992B1FF0004DEEB /* PageViewControllerParent.xib */,
-				D5DAA8A6199171B800BB616D /* ChildPageViewController.swift */,
-				D5DAA8A7199171B800BB616D /* ChildPageViewController.xib */,
+				D582A9FC19A2695C001D82B8 /* Shared Parent View Controller */,
 				D52542AF19916C520052FDEB /* Obj-C */,
 				D52542AE19916C410052FDEB /* Swift */,
 			);
@@ -209,9 +205,7 @@
 		D52CE69219901AC700A82A7A /* MainTableView */ = {
 			isa = PBXGroup;
 			children = (
-				D538070E1992B7ED0004DEEB /* MainTableViewControllerParent.h */,
-				D538070F1992B7ED0004DEEB /* MainTableViewControllerParent.m */,
-				D53807101992B7ED0004DEEB /* MainTableViewControllerParent.xib */,
+				D582A9F919A268FE001D82B8 /* Shared Parent View Controller */,
 				D52CE69419901AD600A82A7A /* Obj-C */,
 				D52CE69319901AD000A82A7A /* Swift */,
 			);
@@ -238,9 +232,7 @@
 		D52CE6991990254A00A82A7A /* UIKit examples */ = {
 			isa = PBXGroup;
 			children = (
-				D53806FA1992995E0004DEEB /* UIKitTableViewControllerParent.h */,
-				D53806FB1992995E0004DEEB /* UIKitTableViewControllerParent.m */,
-				D53806F71992980C0004DEEB /* UIKitTableViewControllerParent.xib */,
+				D582A9FA19A2692D001D82B8 /* Shared Parent View Controller */,
 				D52CE69B1990255C00A82A7A /* Obj-C */,
 				D52CE69A1990255700A82A7A /* Swift */,
 			);
@@ -267,14 +259,7 @@
 		D52CE6A3199089EB00A82A7A /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				D52CE6AF19908A9100A82A7A /* MainCollectionViewCell.h */,
-				D52CE6B019908A9100A82A7A /* MainCollectionViewCell.m */,
-				D52CE6B119908A9100A82A7A /* MainCollectionViewCell.xib */,
-				D52CE6A619908A2900A82A7A /* CCFlowLayout.h */,
-				D52CE6A719908A2900A82A7A /* CCFlowLayout.m */,
-				D52CE6A819908A2900A82A7A /* CCDetailCollectionViewController.h */,
-				D52CE6A919908A2900A82A7A /* CCDetailCollectionViewController.m */,
-				D538070619929EF00004DEEB /* CCDetailCollectionViewController.xib */,
+				D582A9FB19A2694A001D82B8 /* Shared Parent View Controller */,
 				D52CE6A4199089F600A82A7A /* Obj-C */,
 				D52CE6A519908A0400A82A7A /* Swift */,
 			);
@@ -301,9 +286,7 @@
 		D53806EF19927DFF0004DEEB /* MapView */ = {
 			isa = PBXGroup;
 			children = (
-				D53807131992C3610004DEEB /* MapViewControllerParent.h */,
-				D53807141992C3610004DEEB /* MapViewControllerParent.m */,
-				D53807151992C3610004DEEB /* MapViewControllerParent.xib */,
+				D582A9FD19A26981001D82B8 /* Shared Parent View Controller */,
 				D53806F119927E370004DEEB /* Obj-C */,
 				D53806F019927E290004DEEB /* Swift */,
 			);
@@ -339,9 +322,7 @@
 		D53807221993E64B0004DEEB /* Consume Webservice */ = {
 			isa = PBXGroup;
 			children = (
-				D53807251993E9860004DEEB /* CatViewControllerParent.h */,
-				D53807261993E9860004DEEB /* CatViewControllerParent.m */,
-				D53807271993E9860004DEEB /* CatViewControllerParent.xib */,
+				D582A9FE19A26989001D82B8 /* Shared Parent View Controller */,
 				D53807231993E66B0004DEEB /* Obj-C */,
 				D53807241993E6720004DEEB /* Swift */,
 			);
@@ -434,9 +415,7 @@
 		D582A9BB199D56FD001D82B8 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				D582A9EF19A24C3A001D82B8 /* CoreDataUsageViewController.h */,
-				D582A9F019A24C3A001D82B8 /* CoreDataUsageViewController.m */,
-				D582A9F119A24C3A001D82B8 /* CoreDataUsageViewController.xib */,
+				D582A9FF19A26994001D82B8 /* Shared Parent View Controller */,
 				D582A9BD199D5717001D82B8 /* Obj-C */,
 				D582A9BC199D570F001D82B8 /* Swift */,
 			);
@@ -507,6 +486,83 @@
 				D582A9EB199E6AAF001D82B8 /* ExampleEntityObjC.m */,
 			);
 			name = CoreDataModel;
+			sourceTree = "<group>";
+		};
+		D582A9F919A268FE001D82B8 /* Shared Parent View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D538070E1992B7ED0004DEEB /* MainTableViewControllerParent.h */,
+				D538070F1992B7ED0004DEEB /* MainTableViewControllerParent.m */,
+				D53807101992B7ED0004DEEB /* MainTableViewControllerParent.xib */,
+			);
+			name = "Shared Parent View Controller";
+			sourceTree = "<group>";
+		};
+		D582A9FA19A2692D001D82B8 /* Shared Parent View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D53806FA1992995E0004DEEB /* UIKitTableViewControllerParent.h */,
+				D53806FB1992995E0004DEEB /* UIKitTableViewControllerParent.m */,
+				D53806F71992980C0004DEEB /* UIKitTableViewControllerParent.xib */,
+			);
+			name = "Shared Parent View Controller";
+			sourceTree = "<group>";
+		};
+		D582A9FB19A2694A001D82B8 /* Shared Parent View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D52CE6AF19908A9100A82A7A /* MainCollectionViewCell.h */,
+				D52CE6B019908A9100A82A7A /* MainCollectionViewCell.m */,
+				D52CE6B119908A9100A82A7A /* MainCollectionViewCell.xib */,
+				D52CE6A619908A2900A82A7A /* CCFlowLayout.h */,
+				D52CE6A719908A2900A82A7A /* CCFlowLayout.m */,
+				D52CE6A819908A2900A82A7A /* CCDetailCollectionViewController.h */,
+				D52CE6A919908A2900A82A7A /* CCDetailCollectionViewController.m */,
+				D538070619929EF00004DEEB /* CCDetailCollectionViewController.xib */,
+			);
+			name = "Shared Parent View Controller";
+			sourceTree = "<group>";
+		};
+		D582A9FC19A2695C001D82B8 /* Shared Parent View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D53807091992B1FF0004DEEB /* PageViewControllerParent.h */,
+				D538070A1992B1FF0004DEEB /* PageViewControllerParent.m */,
+				D538070B1992B1FF0004DEEB /* PageViewControllerParent.xib */,
+				D5DAA8A6199171B800BB616D /* ChildPageViewController.swift */,
+				D5DAA8A7199171B800BB616D /* ChildPageViewController.xib */,
+			);
+			name = "Shared Parent View Controller";
+			sourceTree = "<group>";
+		};
+		D582A9FD19A26981001D82B8 /* Shared Parent View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D53807131992C3610004DEEB /* MapViewControllerParent.h */,
+				D53807141992C3610004DEEB /* MapViewControllerParent.m */,
+				D53807151992C3610004DEEB /* MapViewControllerParent.xib */,
+			);
+			name = "Shared Parent View Controller";
+			sourceTree = "<group>";
+		};
+		D582A9FE19A26989001D82B8 /* Shared Parent View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D53807251993E9860004DEEB /* CatViewControllerParent.h */,
+				D53807261993E9860004DEEB /* CatViewControllerParent.m */,
+				D53807271993E9860004DEEB /* CatViewControllerParent.xib */,
+			);
+			name = "Shared Parent View Controller";
+			sourceTree = "<group>";
+		};
+		D582A9FF19A26994001D82B8 /* Shared Parent View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D582A9EF19A24C3A001D82B8 /* CoreDataUsageViewController.h */,
+				D582A9F019A24C3A001D82B8 /* CoreDataUsageViewController.m */,
+				D582A9F119A24C3A001D82B8 /* CoreDataUsageViewController.xib */,
+			);
+			name = "Shared Parent View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
