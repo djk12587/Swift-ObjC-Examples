@@ -41,7 +41,7 @@ class CatViewControllerSwift: CatViewControllerParent {
         NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) {
             (response:NSURLResponse!, data:NSData!, connectionError:NSError!) -> Void in
             
-            if data.length > 0 && connectionError == nil {
+            if connectionError == nil && data.length > 0 {
                 
                 let catFacts:NSDictionary = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments, error: nil) as NSDictionary
                 
@@ -50,6 +50,9 @@ class CatViewControllerSwift: CatViewControllerParent {
                 } else {
                     weakSelf!.myLabel.text = "There was an error getting your cat fact :("
                 }
+                
+            } else {
+                weakSelf!.myLabel.text = "There was an error getting your cat fact :("
             }
         }
         

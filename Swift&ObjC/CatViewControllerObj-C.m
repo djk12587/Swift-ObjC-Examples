@@ -37,7 +37,7 @@
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
         
-        if (data.length > 0 && connectionError == nil)
+        if (connectionError == nil && data.length > 0)
         {
             NSDictionary *catFacts = [NSJSONSerialization JSONObjectWithData:data
                                                                      options:0
@@ -48,6 +48,9 @@
             } else {
                 [weakSelf.myLabel setText:@"There was an error getting your cat fact :("];
             }
+            
+        } else {
+            [weakSelf.myLabel setText:@"There was an error getting your cat fact :("];
         }
     }];
     
