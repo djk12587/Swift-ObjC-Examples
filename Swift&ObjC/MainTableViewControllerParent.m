@@ -22,25 +22,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
-//    [CoreDataHelper core_saveInMainContext:^{
-//        ExampleEntityObjC *entity = [ExampleEntityObjC core_createInContext:[CoreDataHelper mainQueueContext]];
-//        entity.date = [NSDate date];
-//    }];
-    
-//    NSArray *results = [ExampleEntityObjC core_findAllWithPredicate:nil inContext:[CoreDataHelper mainQueueContext]];
-//    //NSLog(@"%@",results);
-//    
-//    ExampleEntityObjC *entity = results.firstObject;
-//    NSLog(@"ObjC: %@",entity.date);
-    
-    
 }
 
 - (void)didReceiveMemoryWarning {
