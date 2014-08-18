@@ -52,6 +52,10 @@
 		D582A9E9199E6A84001D82B8 /* ObjcModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D582A9E7199E6A84001D82B8 /* ObjcModel.xcdatamodeld */; };
 		D582A9EC199E6AAF001D82B8 /* ExampleEntityObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = D582A9EB199E6AAF001D82B8 /* ExampleEntityObjC.m */; };
 		D582A9EE199E70BA001D82B8 /* ExampleEntitySwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D582A9ED199E70BA001D82B8 /* ExampleEntitySwift.swift */; };
+		D582A9F219A24C3A001D82B8 /* CoreDataUsageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D582A9F019A24C3A001D82B8 /* CoreDataUsageViewController.m */; };
+		D582A9F319A24C3A001D82B8 /* CoreDataUsageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D582A9F119A24C3A001D82B8 /* CoreDataUsageViewController.xib */; };
+		D582A9F519A24F74001D82B8 /* CoreDataUsageViewControllerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D582A9F419A24F74001D82B8 /* CoreDataUsageViewControllerSwift.swift */; };
+		D582A9F819A263D0001D82B8 /* CoreDataUsageViewControllerObj-C.m in Sources */ = {isa = PBXBuildFile; fileRef = D582A9F719A263D0001D82B8 /* CoreDataUsageViewControllerObj-C.m */; };
 		D5DAA8A8199171B800BB616D /* ChildPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DAA8A6199171B800BB616D /* ChildPageViewController.swift */; };
 		D5DAA8A9199171B800BB616D /* ChildPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5DAA8A7199171B800BB616D /* ChildPageViewController.xib */; };
 		D5DAA8AB1991747600BB616D /* PageViewControllerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DAA8AA1991747600BB616D /* PageViewControllerSwift.swift */; };
@@ -138,6 +142,12 @@
 		D582A9EA199E6AAF001D82B8 /* ExampleEntityObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleEntityObjC.h; sourceTree = "<group>"; };
 		D582A9EB199E6AAF001D82B8 /* ExampleEntityObjC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleEntityObjC.m; sourceTree = "<group>"; };
 		D582A9ED199E70BA001D82B8 /* ExampleEntitySwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleEntitySwift.swift; sourceTree = "<group>"; };
+		D582A9EF19A24C3A001D82B8 /* CoreDataUsageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataUsageViewController.h; sourceTree = "<group>"; };
+		D582A9F019A24C3A001D82B8 /* CoreDataUsageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataUsageViewController.m; sourceTree = "<group>"; };
+		D582A9F119A24C3A001D82B8 /* CoreDataUsageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoreDataUsageViewController.xib; sourceTree = "<group>"; };
+		D582A9F419A24F74001D82B8 /* CoreDataUsageViewControllerSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataUsageViewControllerSwift.swift; sourceTree = "<group>"; };
+		D582A9F619A263D0001D82B8 /* CoreDataUsageViewControllerObj-C.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreDataUsageViewControllerObj-C.h"; sourceTree = "<group>"; };
+		D582A9F719A263D0001D82B8 /* CoreDataUsageViewControllerObj-C.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CoreDataUsageViewControllerObj-C.m"; sourceTree = "<group>"; };
 		D5DAA8A6199171B800BB616D /* ChildPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildPageViewController.swift; sourceTree = "<group>"; };
 		D5DAA8A7199171B800BB616D /* ChildPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChildPageViewController.xib; sourceTree = "<group>"; };
 		D5DAA8AA1991747600BB616D /* PageViewControllerSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewControllerSwift.swift; sourceTree = "<group>"; };
@@ -424,6 +434,9 @@
 		D582A9BB199D56FD001D82B8 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				D582A9EF19A24C3A001D82B8 /* CoreDataUsageViewController.h */,
+				D582A9F019A24C3A001D82B8 /* CoreDataUsageViewController.m */,
+				D582A9F119A24C3A001D82B8 /* CoreDataUsageViewController.xib */,
 				D582A9BD199D5717001D82B8 /* Obj-C */,
 				D582A9BC199D570F001D82B8 /* Swift */,
 			);
@@ -435,6 +448,7 @@
 			children = (
 				D582A9DD199E5AF2001D82B8 /* CoreDataModel */,
 				D582A9CB199D58B7001D82B8 /* CoreDataHelperSwift */,
+				D582A9F419A24F74001D82B8 /* CoreDataUsageViewControllerSwift.swift */,
 			);
 			name = Swift;
 			sourceTree = "<group>";
@@ -444,6 +458,8 @@
 			children = (
 				D582A9E5199E6A59001D82B8 /* CoreDataModel */,
 				D582A9CA199D5821001D82B8 /* CoreDataHelperObj-C */,
+				D582A9F619A263D0001D82B8 /* CoreDataUsageViewControllerObj-C.h */,
+				D582A9F719A263D0001D82B8 /* CoreDataUsageViewControllerObj-C.m */,
 			);
 			name = "Obj-C";
 			sourceTree = "<group>";
@@ -467,9 +483,9 @@
 			isa = PBXGroup;
 			children = (
 				D582A9CC199D5906001D82B8 /* CoreDataHelperSwift.swift */,
+				D582A9E3199E61FE001D82B8 /* CoreDataHelperSwift+Saver.swift */,
 				D582A9D1199E5184001D82B8 /* NSManagedObject+CreationSwift.swift */,
 				D582A9E1199E5C5B001D82B8 /* NSManagedObject+FetchSwift.swift */,
-				D582A9E3199E61FE001D82B8 /* CoreDataHelperSwift+Saver.swift */,
 			);
 			name = CoreDataHelperSwift;
 			sourceTree = "<group>";
@@ -573,6 +589,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D582A9F319A24C3A001D82B8 /* CoreDataUsageViewController.xib in Resources */,
 				D53807121992B7ED0004DEEB /* MainTableViewControllerParent.xib in Resources */,
 				D5DAA8A9199171B800BB616D /* ChildPageViewController.xib in Resources */,
 				D56090F319900F320092AA36 /* Main.storyboard in Resources */,
@@ -607,6 +624,7 @@
 				D52CE69819901B0000A82A7A /* MainTableViewControllerObj-C.m in Sources */,
 				D582A9C9199D572D001D82B8 /* NSManagedObject+Fetch.m in Sources */,
 				D52CE6B519908EEF00A82A7A /* CollectionViewSwift.swift in Sources */,
+				D582A9F519A24F74001D82B8 /* CoreDataUsageViewControllerSwift.swift in Sources */,
 				D52CE69119901A4D00A82A7A /* MainTableViewControllerSwift.swift in Sources */,
 				D56090F019900F320092AA36 /* ViewController.swift in Sources */,
 				D582A9D0199D757F001D82B8 /* SwiftModel.xcdatamodeld in Sources */,
@@ -617,6 +635,7 @@
 				D52CE6AB19908A2900A82A7A /* CCDetailCollectionViewController.m in Sources */,
 				D5DAA8AB1991747600BB616D /* PageViewControllerSwift.swift in Sources */,
 				D53807111992B7ED0004DEEB /* MainTableViewControllerParent.m in Sources */,
+				D582A9F219A24C3A001D82B8 /* CoreDataUsageViewController.m in Sources */,
 				D56090EE19900F320092AA36 /* AppDelegate.swift in Sources */,
 				D5DAA8A8199171B800BB616D /* ChildPageViewController.swift in Sources */,
 				D53806FC1992995E0004DEEB /* UIKitTableViewControllerParent.m in Sources */,
@@ -627,6 +646,7 @@
 				D582A9E4199E61FE001D82B8 /* CoreDataHelperSwift+Saver.swift in Sources */,
 				D582A9EE199E70BA001D82B8 /* ExampleEntitySwift.swift in Sources */,
 				D53807161992C3610004DEEB /* MapViewControllerParent.m in Sources */,
+				D582A9F819A263D0001D82B8 /* CoreDataUsageViewControllerObj-C.m in Sources */,
 				D582A9C6199D572D001D82B8 /* CoreDataHelper.m in Sources */,
 				D582A9E2199E5C5B001D82B8 /* NSManagedObject+FetchSwift.swift in Sources */,
 				D538071E1992C5BE0004DEEB /* MapViewControllerSwift.swift in Sources */,

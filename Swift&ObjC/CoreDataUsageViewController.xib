@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6205" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6198"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CoreDataUsageViewController">
+            <connections>
+                <outlet property="addARecordButton" destination="b8f-b5-CZN" id="57V-ah-khM"/>
+                <outlet property="coreDataTableView" destination="gZ6-xc-T8x" id="e1T-8H-gu4"/>
+                <outlet property="deleteAllButton" destination="R4Q-OG-hPy" id="PjC-K4-885"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="gZ6-xc-T8x">
+                    <rect key="frame" x="0.0" y="149" width="600" height="451"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="LwA-FS-o60"/>
+                        <outlet property="delegate" destination="-1" id="5UK-bT-vi1"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8f-b5-CZN">
+                    <rect key="frame" x="25" y="88" width="146" height="53"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="53" id="OYD-5k-G82"/>
+                        <constraint firstAttribute="width" constant="146" id="fCH-MA-E1a"/>
+                    </constraints>
+                    <state key="normal" title="Add a record">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R4Q-OG-hPy">
+                    <rect key="frame" x="429" y="88" width="146" height="53"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="53" id="8hE-gp-kmt"/>
+                        <constraint firstAttribute="width" constant="146" id="lKf-40-FSN"/>
+                    </constraints>
+                    <state key="normal" title="Delete all">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="b8f-b5-CZN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="88" id="8Tn-oQ-Fl9"/>
+                <constraint firstItem="R4Q-OG-hPy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="88" id="8tr-ch-lPU"/>
+                <constraint firstItem="gZ6-xc-T8x" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="B8y-8Z-xAQ"/>
+                <constraint firstAttribute="trailing" secondItem="gZ6-xc-T8x" secondAttribute="trailing" id="L1c-cI-WzR"/>
+                <constraint firstAttribute="bottom" secondItem="gZ6-xc-T8x" secondAttribute="bottom" id="Njq-fY-vuI"/>
+                <constraint firstItem="gZ6-xc-T8x" firstAttribute="top" secondItem="b8f-b5-CZN" secondAttribute="bottom" constant="8" id="RVe-Qe-fbo"/>
+                <constraint firstItem="gZ6-xc-T8x" firstAttribute="top" secondItem="R4Q-OG-hPy" secondAttribute="bottom" constant="8" id="Thm-9Q-Saw"/>
+                <constraint firstItem="b8f-b5-CZN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="jnd-2J-LIs"/>
+                <constraint firstAttribute="trailing" secondItem="R4Q-OG-hPy" secondAttribute="trailing" constant="25" id="sEZ-9G-scN"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+        </view>
+    </objects>
+</document>

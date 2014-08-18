@@ -12,6 +12,7 @@
 #import "PageViewControllerObj-C.h"
 #import "MapViewViewControllerObj-C.h"
 #import "CatViewControllerObj-C.h"
+#import "CoreDataUsageViewControllerObj-C.h"
 
 @implementation MainTableViewControllerObj_C
 
@@ -89,6 +90,11 @@
             break;
         case 4: {
             CatViewControllerObj_C *viewController = [[CatViewControllerObj_C alloc]initWithNibName:@"CatViewControllerParent" bundle:nil];
+            [self.navigationController pushViewController:viewController animated:YES];
+        }
+            break;
+        default: {
+            CoreDataUsageViewControllerObj_C *viewController = [[CoreDataUsageViewControllerObj_C alloc]initWithNibName:@"CoreDataUsageViewController" bundle:nil];
             [self.navigationController pushViewController:viewController animated:YES];
         }
             break;

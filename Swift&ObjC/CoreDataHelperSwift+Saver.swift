@@ -17,7 +17,7 @@ extension CoreDataHelperSwift {
     class func core_saveInMainContext(changes:CoreSimpleBlock) {
         var context = self.defaultStore.mainQueueContext
         
-        context .performBlock { () -> Void in
+        context.performBlock { () -> Void in
             changes()
             
             var error:NSError?
