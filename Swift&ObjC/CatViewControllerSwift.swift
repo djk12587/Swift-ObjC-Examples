@@ -42,11 +42,16 @@ class CatViewControllerSwift: CatViewControllerParent {
             (response:NSURLResponse!, data:NSData!, connectionError:NSError!) -> Void in
             
             if connectionError == nil && data.length > 0 {
-                
-                let catFacts:NSDictionary = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments, error: nil) as NSDictionary
-                
-                if catFacts["success"].boolValue {
-                    weakSelf!.myLabel.text = catFacts["facts"].firstObject as NSString
+
+                var jsonErrorOptional: NSError?
+                let jsonOptional: AnyObject! = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions(0), error: &jsonErrorOptional)
+
+                let success:String = jsonOptional["success"] as String
+
+                if success == "true" {
+                    let catFactArray:Array<String> = jsonOptional["facts"] as Array<String>
+                    let fact:String = catFactArray[0]
+                    weakSelf!.myLabel.text = fact
                 } else {
                     weakSelf!.myLabel.text = "There was an error getting your cat fact :("
                 }

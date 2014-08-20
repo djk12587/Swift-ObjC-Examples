@@ -30,16 +30,18 @@ class UIKitExamplesSwift: UIKitTableViewControllerParent, UITextFieldDelegate {
         
         var cell:UITableViewCell! = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as? UITableViewCell
         
-        if !cell {
+        if cell != nil {
             cell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: cellIdentifier)
         }
         
         cell.selectionStyle = UITableViewCellSelectionStyle.None
         
+        
+        
         switch indexPath.row {
         case 0:
             
-            if !cell.accessoryView || !cell.accessoryView.isMemberOfClass(UISwitch) {
+            if (cell.accessoryView != nil || !cell.accessoryView.isMemberOfClass(UISwitch)) {
                 let switchView = UISwitch()
                 switchView.addTarget(self, action: "switchToggle:", forControlEvents: UIControlEvents.ValueChanged)
                 cell.accessoryView = switchView
@@ -51,7 +53,7 @@ class UIKitExamplesSwift: UIKitTableViewControllerParent, UITextFieldDelegate {
             
         case 1:
             
-            if !cell.accessoryView || !cell.accessoryView.isMemberOfClass(UIButton) {
+            if cell.accessoryView != nil || !cell.accessoryView.isMemberOfClass(UIButton) {
                 var button:UIButton = UIButton.buttonWithType(UIButtonType.Custom) as UIButton
                 button.frame = CGRectMake(0, 0, 100, 40)
                 button.backgroundColor = UIColor.redColor()
@@ -62,7 +64,7 @@ class UIKitExamplesSwift: UIKitTableViewControllerParent, UITextFieldDelegate {
             cell.textLabel.text = "Button:"
             
         case 2:
-            if !cell.accessoryView || !cell.accessoryView.isMemberOfClass(UISlider) {
+            if cell.accessoryView != nil || !cell.accessoryView.isMemberOfClass(UISlider) {
                 
                 let slider = UISlider()
                 slider.minimumValue = 0
@@ -76,7 +78,7 @@ class UIKitExamplesSwift: UIKitTableViewControllerParent, UITextFieldDelegate {
             
         case 3:
             
-        if !cell.accessoryView || !cell.accessoryView.isMemberOfClass(UIProgressView) {
+        if cell.accessoryView != nil || !cell.accessoryView.isMemberOfClass(UIProgressView) {
                 let progressBar = UIProgressView(progressViewStyle: UIProgressViewStyle.Default)
                 cell.accessoryView = progressBar
             }
@@ -86,7 +88,7 @@ class UIKitExamplesSwift: UIKitTableViewControllerParent, UITextFieldDelegate {
             
         case 4:
             
-            if !cell.accessoryView || !cell.accessoryView.isMemberOfClass(UITextField) {
+            if cell.accessoryView != nil || !cell.accessoryView.isMemberOfClass(UITextField) {
                 let textField = UITextField(frame: CGRectMake(0, 0, 180, 33))
                 textField.borderStyle = UITextBorderStyle.RoundedRect
                 textField.delegate = self

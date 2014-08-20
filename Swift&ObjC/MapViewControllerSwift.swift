@@ -73,11 +73,13 @@ class MapViewControllerSwift: MapViewControllerParent, UISearchBarDelegate , UIT
     }
     
     func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
-        if (resultArray != nil) {
-            return resultArray.count
-        } else {
-            return 0
-        }
+        
+        return resultArray.count
+//        if (resultArray != nil) {
+//            return resultArray.count
+//        } else {
+//            return 0
+//        }
     }
     
     func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
@@ -151,11 +153,11 @@ class MapViewControllerSwift: MapViewControllerParent, UISearchBarDelegate , UIT
             (response:MKLocalSearchResponse!, error:NSError!) in
             if error == nil {
 
-                if (weakSelf!.resultArray != nil) {
+//                if (weakSelf!.resultArray != nil) {
                     weakSelf!.resultArray.removeAllObjects()
-                } else {
-                    weakSelf!.resultArray = NSMutableArray()
-                }
+//                } else {
+//                    weakSelf!.resultArray = NSMutableArray()
+//                }
                 
                 for item in response.mapItems {
                     weakSelf!.resultArray.addObject(item)
