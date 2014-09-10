@@ -12,19 +12,19 @@ class CollectionViewSwift: CCDetailCollectionViewController {
     
     override func viewDidLoad()  {
         super.viewDidLoad()
-        
-        self.collectionView.registerNib(UINib(nibName: "MainCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "MainCollectionViewCell")
+                
+        self.collectionView?.registerNib(UINib(nibName: "MainCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "MainCollectionViewCell")
     }
 
-    override func numberOfSectionsInCollectionView(collectionView: UICollectionView!) -> Int  {
+    override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int  {
         return 1
     }
     
-    override func collectionView(collectionView: UICollectionView!, numberOfItemsInSection section: Int) -> Int  {
+    override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int  {
         return 6
     }
     
-    override func collectionView(collectionView: UICollectionView!, cellForItemAtIndexPath indexPath: NSIndexPath!) -> UICollectionViewCell! {
+    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         var cell:MainCollectionViewCell! = collectionView.dequeueReusableCellWithReuseIdentifier("MainCollectionViewCell", forIndexPath: indexPath) as MainCollectionViewCell
         
         switch indexPath.row {

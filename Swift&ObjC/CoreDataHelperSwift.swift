@@ -18,7 +18,7 @@ class CoreDataHelperSwift: NSObject {
     //MARK: - Getters
     lazy var managedObjectModel:NSManagedObjectModel = {
         var modelURL = NSBundle.mainBundle().URLForResource(self.coreDataModelFileName, withExtension: "momd")
-        var objectModel = NSManagedObjectModel(contentsOfURL: modelURL)
+        var objectModel = NSManagedObjectModel(contentsOfURL: modelURL!)
         
         return objectModel
     }()

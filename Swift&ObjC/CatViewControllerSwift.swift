@@ -38,6 +38,7 @@ class CatViewControllerSwift: CatViewControllerParent {
         
         let url = NSURL(string: "http://catfacts-api.appspot.com/api/facts?number=1")
         let request = NSURLRequest(URL: url)
+
         NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) {
             (response:NSURLResponse!, data:NSData!, connectionError:NSError!) -> Void in
             

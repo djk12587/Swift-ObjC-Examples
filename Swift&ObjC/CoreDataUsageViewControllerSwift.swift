@@ -20,7 +20,7 @@ class CoreDataUsageViewControllerSwift: CoreDataUsageViewController {
         
         var fetchResult = ExampleEntitySwift.core_findAllSortedBy("date", ascending: false, predicate: nil, context: CoreDataHelperSwift.getPrivateQueueContext())
 
-        self.resultsArray = NSMutableArray(array: fetchResult)
+        self.resultsArray = NSMutableArray(array: fetchResult!)
         
     }
     

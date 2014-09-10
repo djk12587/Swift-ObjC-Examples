@@ -22,12 +22,12 @@ class ViewController: UIViewController {
 
     @IBAction func swiftAction(sender: AnyObject) {
         let viewController = MainTableViewControllerSwift(nibName: "MainTableViewControllerParent", bundle: nil)
-        self.navigationController.pushViewController(viewController, animated: true)
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
 
     @IBAction func objCAction(sender: AnyObject) {
         let viewController = MainTableViewControllerObj_C(nibName: "MainTableViewControllerParent", bundle: nil)
-        self.navigationController.pushViewController(viewController, animated: true)
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
 }
 

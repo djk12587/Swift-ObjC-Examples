@@ -68,11 +68,11 @@ class MapViewControllerSwift: MapViewControllerParent, UISearchBarDelegate , UIT
     
 
     //MARK: - UITableview Delegate Methods
-    func numberOfSectionsInTableView(tableView: UITableView!) -> Int {
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
     
-    func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return resultArray.count
 //        if (resultArray != nil) {
@@ -82,7 +82,7 @@ class MapViewControllerSwift: MapViewControllerParent, UISearchBarDelegate , UIT
 //        }
     }
     
-    func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let identifier = "cell"
         
@@ -94,12 +94,12 @@ class MapViewControllerSwift: MapViewControllerParent, UISearchBarDelegate , UIT
         }
         
         var mapItem:MKMapItem = self.resultArray.objectAtIndex(indexPath.row) as MKMapItem
-        cell.textLabel.text = mapItem.name
+        cell.textLabel?.text = mapItem.name
         
         return cell
     }
     
-    func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         mySearchBar.resignFirstResponder()
         weak var weakSelf = self
         tableViewShouldBeVisible(false,
@@ -182,7 +182,6 @@ class MapViewControllerSwift: MapViewControllerParent, UISearchBarDelegate , UIT
     //MARK: - UIMapView Delegate Methods
     
     func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
-        
         var pinView:MKPinAnnotationView!
         
         let pinIdentifier = "pinID"

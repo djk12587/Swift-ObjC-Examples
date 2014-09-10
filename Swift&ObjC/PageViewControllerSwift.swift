@@ -43,7 +43,8 @@ class PageViewControllerSwift: PageViewControllerParent, UIPageViewControllerDat
     }
     
     //MARK: UIPageControllerDataSource Methods
-    func pageViewController(pageViewController: UIPageViewController!, viewControllerBeforeViewController viewController: UIViewController!) -> UIViewController! {
+    
+    func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
         var childViewController = viewController as ChildPageViewController
         var index:NSInteger! = childViewController.index.integerValue
         
@@ -56,7 +57,7 @@ class PageViewControllerSwift: PageViewControllerParent, UIPageViewControllerDat
         return viewControllerAtIndex(index)
     }
     
-    func pageViewController(pageViewController: UIPageViewController!, viewControllerAfterViewController viewController: UIViewController!) -> UIViewController! {
+    func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
         var childViewController = viewController as ChildPageViewController
         var index:NSInteger! = childViewController.index.integerValue
         
@@ -68,6 +69,8 @@ class PageViewControllerSwift: PageViewControllerParent, UIPageViewControllerDat
         
         return viewControllerAtIndex(index)
     }
+    
+
     
     func presentationCountForPageViewController(pageViewController: UIPageViewController!) -> Int {
         return 5
